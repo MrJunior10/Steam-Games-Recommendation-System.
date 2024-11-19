@@ -37,15 +37,10 @@ With thousands of games available on Steam, finding the perfect game can be over
 ### **1. Content-Based Filtering**
 - **Vectorization**: Game descriptions are transformed into vector representations using **Doc2Vec**.
 - **Similarity Calculation**: Cosine similarity between game vectors identifies similar games:
-  \[
-  	ext{Similarity Score} = \cos(ec{v}_{	ext{game1}}, ec{v}_{	ext{game2}})
-  \]
+ 
 
 ### **2. Collaborative Filtering**
 - **Matrix Decomposition**: User-game interaction data is decomposed using **Singular Value Decomposition (SVD)**:
-  \[
-  R pprox U \Sigma V^T
-  \]
 - **Preference Prediction**: Missing ratings are predicted by reconstructing the interaction matrix.
 
 ### **3. Popularity Metrics**
@@ -53,10 +48,6 @@ With thousands of games available on Steam, finding the perfect game can be over
 
 ### **4. Hybrid Scoring Mechanism**
 - Combines content-based, collaborative, and popularity scores into a final recommendation score:
-  \[
-  	ext{Hybrid Score} = w_c \cdot 	ext{Content Score} + w_{cf} \cdot 	ext{Collaborative Score} + w_p \cdot 	ext{Popularity Score}
-  \]
-
 ---
 
 ## 🔍 Key Results
